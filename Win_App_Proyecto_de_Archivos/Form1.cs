@@ -51,7 +51,19 @@ namespace Win_App_Proyecto_de_Archivos
 
         private void btninicio_Click(object sender, EventArgs e)
         {
+            dataCine1.WriteXml(Application.StartupPath + "\\Cine.xml");
             AbrirFormEnPanel(new inicio());
         }
+
+        private void BtnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }
