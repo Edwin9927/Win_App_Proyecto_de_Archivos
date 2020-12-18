@@ -63,9 +63,70 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap auditorio_cine {
+            get {
+                object obj = ResourceManager.GetObject("auditorio_cine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap checkmark_40px {
+            get {
+                object obj = ResourceManager.GetObject("checkmark_40px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap checkmark_50px {
+            get {
+                object obj = ResourceManager.GetObject("checkmark_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+        ///&lt;DataCine xmlns=&quot;http://tempuri.org/DataCine.xsd&quot;&gt;
+        ///  &lt;salas&gt;
+        ///    &lt;id&gt;2&lt;/id&gt;
+        ///    &lt;nombre&gt;Sala 1&lt;/nombre&gt;
+        ///    &lt;n_asientos&gt;30&lt;/n_asientos&gt;
+        ///  &lt;/salas&gt;
+        ///  &lt;salas&gt;
+        ///    &lt;id&gt;3&lt;/id&gt;
+        ///    &lt;nombre&gt;Sala 2&lt;/nombre&gt;
+        ///    &lt;n_asientos&gt;40&lt;/n_asientos&gt;
+        ///  &lt;/salas&gt;
+        ///&lt;/DataCine&gt;.
+        /// </summary>
+        internal static string Cine {
+            get {
+                return ResourceManager.GetString("Cine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delete_32px {
             get {
                 object obj = ResourceManager.GetObject("delete_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_40px {
+            get {
+                object obj = ResourceManager.GetObject("delete_40px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -77,6 +138,56 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
             get {
                 object obj = ResourceManager.GetObject("icons8_ticket", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap no_entry_50px {
+            get {
+                object obj = ResourceManager.GetObject("no_entry_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_math_50px {
+            get {
+                object obj = ResourceManager.GetObject("plus_math_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap report_file_50px {
+            get {
+                object obj = ResourceManager.GetObject("report_file_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_40px {
+            get {
+                object obj = ResourceManager.GetObject("search_40px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_50px {
+            get {
+                object obj = ResourceManager.GetObject("search_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

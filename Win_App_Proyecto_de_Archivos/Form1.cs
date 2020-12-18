@@ -51,7 +51,7 @@ namespace Win_App_Proyecto_de_Archivos
 
         private void btninicio_Click(object sender, EventArgs e)
         {
-            dataCine1.WriteXml(Application.StartupPath + "\\Cine.xml");
+            dataCine1.ReadXml(Application.StartupPath + "\\Cine.xml");
             AbrirFormEnPanel(new inicio());
         }
 
@@ -65,5 +65,9 @@ namespace Win_App_Proyecto_de_Archivos
             this.Close();
         }
 
+        private void btnSala_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new newSala());
+        }
     }
 }

@@ -32,19 +32,21 @@ namespace Win_App_Proyecto_de_Archivos
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dataCine1 = new Win_App_Proyecto_de_Archivos.DataCine();
             this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.btninicio = new System.Windows.Forms.PictureBox();
             this.BtnSalir = new System.Windows.Forms.PictureBox();
             this.BtnMin = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.BtnVolumen = new System.Windows.Forms.Button();
+            this.btnSala = new System.Windows.Forms.Button();
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.btnClientes = new System.Windows.Forms.Button();
+            this.btnPelicula = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.btninicio = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataCine1)).BeginInit();
             this.BarraTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btninicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMin)).BeginInit();
             this.MenuVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btninicio)).BeginInit();
             this.SuspendLayout();
             // 
             // dataCine1
@@ -65,6 +67,17 @@ namespace Win_App_Proyecto_de_Archivos
             this.BarraTitulo.Size = new System.Drawing.Size(1000, 38);
             this.BarraTitulo.TabIndex = 0;
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
+            // 
+            // btninicio
+            // 
+            this.btninicio.ErrorImage = null;
+            this.btninicio.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.ticket_30px;
+            this.btninicio.Location = new System.Drawing.Point(12, 4);
+            this.btninicio.Name = "btninicio";
+            this.btninicio.Size = new System.Drawing.Size(30, 30);
+            this.btninicio.TabIndex = 10;
+            this.btninicio.TabStop = false;
+            this.btninicio.Click += new System.EventHandler(this.btninicio_Click);
             // 
             // BtnSalir
             // 
@@ -99,33 +112,72 @@ namespace Win_App_Proyecto_de_Archivos
             this.label1.TabIndex = 0;
             this.label1.Text = "CINES";
             // 
-            // BtnVolumen
+            // btnSala
             // 
-            this.BtnVolumen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.BtnVolumen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnVolumen.FlatAppearance.BorderSize = 0;
-            this.BtnVolumen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BtnVolumen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnVolumen.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVolumen.ForeColor = System.Drawing.Color.White;
-            this.BtnVolumen.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.subtract_32px;
-            this.BtnVolumen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnVolumen.Location = new System.Drawing.Point(0, 44);
-            this.BtnVolumen.Name = "BtnVolumen";
-            this.BtnVolumen.Size = new System.Drawing.Size(200, 40);
-            this.BtnVolumen.TabIndex = 2;
-            this.BtnVolumen.Text = "Volumen";
-            this.BtnVolumen.UseVisualStyleBackColor = false;
+            this.btnSala.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btnSala.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSala.FlatAppearance.BorderSize = 0;
+            this.btnSala.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btnSala.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSala.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSala.ForeColor = System.Drawing.Color.White;
+            this.btnSala.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.subtract_32px;
+            this.btnSala.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSala.Location = new System.Drawing.Point(0, 44);
+            this.btnSala.Name = "btnSala";
+            this.btnSala.Size = new System.Drawing.Size(200, 40);
+            this.btnSala.TabIndex = 2;
+            this.btnSala.Text = "SALAS";
+            this.btnSala.UseVisualStyleBackColor = false;
+            this.btnSala.Click += new System.EventHandler(this.btnSala_Click);
             // 
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.MenuVertical.Controls.Add(this.BtnVolumen);
+            this.MenuVertical.Controls.Add(this.btnClientes);
+            this.MenuVertical.Controls.Add(this.btnPelicula);
+            this.MenuVertical.Controls.Add(this.btnSala);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 38);
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(200, 450);
             this.MenuVertical.TabIndex = 1;
+            // 
+            // btnClientes
+            // 
+            this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.ForeColor = System.Drawing.Color.White;
+            this.btnClientes.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.subtract_32px;
+            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClientes.Location = new System.Drawing.Point(0, 136);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(200, 40);
+            this.btnClientes.TabIndex = 4;
+            this.btnClientes.Text = "CLIENTES";
+            this.btnClientes.UseVisualStyleBackColor = false;
+            // 
+            // btnPelicula
+            // 
+            this.btnPelicula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btnPelicula.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPelicula.FlatAppearance.BorderSize = 0;
+            this.btnPelicula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btnPelicula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPelicula.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPelicula.ForeColor = System.Drawing.Color.White;
+            this.btnPelicula.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.subtract_32px;
+            this.btnPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPelicula.Location = new System.Drawing.Point(0, 90);
+            this.btnPelicula.Name = "btnPelicula";
+            this.btnPelicula.Size = new System.Drawing.Size(200, 40);
+            this.btnPelicula.TabIndex = 3;
+            this.btnPelicula.Text = "PELICULAS";
+            this.btnPelicula.UseVisualStyleBackColor = false;
             // 
             // panelContenedor
             // 
@@ -135,17 +187,6 @@ namespace Win_App_Proyecto_de_Archivos
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(800, 450);
             this.panelContenedor.TabIndex = 2;
-            // 
-            // btninicio
-            // 
-            this.btninicio.ErrorImage = null;
-            this.btninicio.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.ticket_30px;
-            this.btninicio.Location = new System.Drawing.Point(12, 4);
-            this.btninicio.Name = "btninicio";
-            this.btninicio.Size = new System.Drawing.Size(30, 30);
-            this.btninicio.TabIndex = 10;
-            this.btninicio.TabStop = false;
-            this.btninicio.Click += new System.EventHandler(this.btninicio_Click);
             // 
             // Form1
             // 
@@ -165,10 +206,10 @@ namespace Win_App_Proyecto_de_Archivos
             ((System.ComponentModel.ISupportInitialize)(this.dataCine1)).EndInit();
             this.BarraTitulo.ResumeLayout(false);
             this.BarraTitulo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btninicio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMin)).EndInit();
             this.MenuVertical.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btninicio)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -179,11 +220,13 @@ namespace Win_App_Proyecto_de_Archivos
         private System.Windows.Forms.Panel BarraTitulo;
         private System.Windows.Forms.Panel MenuVertical;
         private System.Windows.Forms.Panel panelContenedor;
-        private System.Windows.Forms.Button BtnVolumen;
+        private System.Windows.Forms.Button btnSala;
         private System.Windows.Forms.PictureBox BtnSalir;
         private System.Windows.Forms.PictureBox BtnMin;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btninicio;
+        private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Button btnPelicula;
     }
 }
 

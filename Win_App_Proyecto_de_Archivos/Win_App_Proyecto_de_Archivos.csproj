@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportViewer.WinForms.10.0.40219.1\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
     </Reference>
@@ -49,6 +58,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addSala.Designer.cs">
+      <DependentUpon>addSala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control.cs" />
     <Compile Include="DataCine.cs">
       <DependentUpon>DataCine.xsd</DependentUpon>
     </Compile>
@@ -69,13 +85,40 @@
     <Compile Include="inicio.Designer.cs">
       <DependentUpon>inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="newCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newCliente.Designer.cs">
+      <DependentUpon>newCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newSala.Designer.cs">
+      <DependentUpon>newSala.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="searchSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchSala.Designer.cs">
+      <DependentUpon>searchSala.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addSala.resx">
+      <DependentUpon>addSala.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newCliente.resx">
+      <DependentUpon>newCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newSala.resx">
+      <DependentUpon>newSala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,6 +130,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="searchSala.resx">
+      <DependentUpon>searchSala.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DataCine.xsc">
       <DependentUpon>DataCine.xsd</DependentUpon>
     </None>
@@ -123,6 +169,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ticket_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auditorio-cine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_math_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_file_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_entry_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_40px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
