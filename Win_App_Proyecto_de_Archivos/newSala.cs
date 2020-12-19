@@ -33,5 +33,11 @@ namespace Win_App_Proyecto_de_Archivos
             searchSala sala = new searchSala();
             sala.ShowDialog();
         }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            reportviewerSala sala = new reportviewerSala();
+            sala.ShowDialog();
+        }
     }
 }

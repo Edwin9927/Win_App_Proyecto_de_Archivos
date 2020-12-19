@@ -32,7 +32,11 @@ namespace Win_App_Proyecto_de_Archivos
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbOpcion = new System.Windows.Forms.ComboBox();
+            this.dataCine1 = new Win_App_Proyecto_de_Archivos.DataCine();
+            this.btnSalir = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCine1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBuscar
@@ -56,6 +60,7 @@ namespace Win_App_Proyecto_de_Archivos
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(130, 30);
             this.txtNombre.TabIndex = 9;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // label1
             // 
@@ -67,24 +72,42 @@ namespace Win_App_Proyecto_de_Archivos
             this.label1.TabIndex = 8;
             this.label1.Text = "Buscar sala";
             // 
-            // comboBox1
+            // cbOpcion
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbOpcion.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbOpcion.FormattingEnabled = true;
+            this.cbOpcion.Items.AddRange(new object[] {
             "Id",
             "Nombre"});
-            this.comboBox1.Location = new System.Drawing.Point(72, 94);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 31);
-            this.comboBox1.TabIndex = 15;
+            this.cbOpcion.Location = new System.Drawing.Point(72, 94);
+            this.cbOpcion.Name = "cbOpcion";
+            this.cbOpcion.Size = new System.Drawing.Size(121, 31);
+            this.cbOpcion.TabIndex = 15;
+            // 
+            // dataCine1
+            // 
+            this.dataCine1.DataSetName = "DataCine";
+            this.dataCine1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.delete_40px;
+            this.btnSalir.Location = new System.Drawing.Point(367, 2);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(30, 30);
+            this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnSalir.TabIndex = 16;
+            this.btnSalir.TabStop = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // searchSala
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(400, 300);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.cbOpcion);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
@@ -92,6 +115,9 @@ namespace Win_App_Proyecto_de_Archivos
             this.Name = "searchSala";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "searchSala";
+            this.Load += new System.EventHandler(this.searchSala_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataCine1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,6 +127,8 @@ namespace Win_App_Proyecto_de_Archivos
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbOpcion;
+        private DataCine dataCine1;
+        private System.Windows.Forms.PictureBox btnSalir;
     }
 }

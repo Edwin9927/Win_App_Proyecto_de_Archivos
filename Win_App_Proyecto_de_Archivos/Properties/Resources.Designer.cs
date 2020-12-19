@@ -94,9 +94,14 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
         ///   Busca una cadena traducida similar a &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
         ///&lt;DataCine xmlns=&quot;http://tempuri.org/DataCine.xsd&quot;&gt;
         ///  &lt;salas&gt;
-        ///    &lt;id&gt;2&lt;/id&gt;
+        ///    &lt;id&gt;1&lt;/id&gt;
         ///    &lt;nombre&gt;Sala 1&lt;/nombre&gt;
-        ///    &lt;n_asientos&gt;30&lt;/n_asientos&gt;
+        ///    &lt;n_asientos&gt;20&lt;/n_asientos&gt;
+        ///  &lt;/salas&gt;
+        ///  &lt;salas&gt;
+        ///    &lt;id&gt;2&lt;/id&gt;
+        ///    &lt;nombre&gt;Sala Vip&lt;/nombre&gt;
+        ///    &lt;n_asientos&gt;10&lt;/n_asientos&gt;
         ///  &lt;/salas&gt;
         ///  &lt;salas&gt;
         ///    &lt;id&gt;3&lt;/id&gt;
@@ -147,6 +152,26 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
         internal static System.Drawing.Bitmap no_entry_50px {
             get {
                 object obj = ResourceManager.GetObject("no_entry_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pencil_40px {
+            get {
+                object obj = ResourceManager.GetObject("pencil_40px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pencil_50px {
+            get {
+                object obj = ResourceManager.GetObject("pencil_50px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -207,6 +232,16 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
         internal static System.Drawing.Bitmap ticket_30px {
             get {
                 object obj = ResourceManager.GetObject("ticket_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trash_40px {
+            get {
+                object obj = ResourceManager.GetObject("trash_40px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
