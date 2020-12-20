@@ -16,5 +16,11 @@ namespace Win_App_Proyecto_de_Archivos
         {
             InitializeComponent();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            addCliente cliente = new addCliente();
+            cliente.ShowDialog();
+        }
     }
 }

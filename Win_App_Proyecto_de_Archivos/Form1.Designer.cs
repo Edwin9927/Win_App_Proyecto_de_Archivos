@@ -38,7 +38,7 @@ namespace Win_App_Proyecto_de_Archivos
             this.label1 = new System.Windows.Forms.Label();
             this.btnSala = new System.Windows.Forms.Button();
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.btnClientes = new System.Windows.Forms.Button();
+            this.btnCliente = new System.Windows.Forms.Button();
             this.btnPelicula = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataCine1)).BeginInit();
@@ -134,7 +134,7 @@ namespace Win_App_Proyecto_de_Archivos
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.MenuVertical.Controls.Add(this.btnClientes);
+            this.MenuVertical.Controls.Add(this.btnCliente);
             this.MenuVertical.Controls.Add(this.btnPelicula);
             this.MenuVertical.Controls.Add(this.btnSala);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
@@ -143,23 +143,24 @@ namespace Win_App_Proyecto_de_Archivos
             this.MenuVertical.Size = new System.Drawing.Size(200, 450);
             this.MenuVertical.TabIndex = 1;
             // 
-            // btnClientes
+            // btnCliente
             // 
-            this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClientes.FlatAppearance.BorderSize = 0;
-            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.ForeColor = System.Drawing.Color.White;
-            this.btnClientes.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.subtract_32px;
-            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Location = new System.Drawing.Point(0, 136);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(200, 40);
-            this.btnClientes.TabIndex = 4;
-            this.btnClientes.Text = "CLIENTES";
-            this.btnClientes.UseVisualStyleBackColor = false;
+            this.btnCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btnCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCliente.FlatAppearance.BorderSize = 0;
+            this.btnCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCliente.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCliente.ForeColor = System.Drawing.Color.White;
+            this.btnCliente.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.subtract_32px;
+            this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCliente.Location = new System.Drawing.Point(0, 136);
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.Size = new System.Drawing.Size(200, 40);
+            this.btnCliente.TabIndex = 4;
+            this.btnCliente.Text = "CLIENTES";
+            this.btnCliente.UseVisualStyleBackColor = false;
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
             // btnPelicula
             // 
@@ -225,7 +226,7 @@ namespace Win_App_Proyecto_de_Archivos
         private System.Windows.Forms.PictureBox BtnMin;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btninicio;
-        private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Button btnCliente;
         private System.Windows.Forms.Button btnPelicula;
     }
 }
