@@ -179,6 +179,7 @@ namespace Win_App_Proyecto_de_Archivos
             this.btnPelicula.TabIndex = 3;
             this.btnPelicula.Text = "PELICULAS";
             this.btnPelicula.UseVisualStyleBackColor = false;
+            this.btnPelicula.Click += new System.EventHandler(this.btnPelicula_Click);
             // 
             // panelContenedor
             // 

@@ -70,6 +70,12 @@
     <Compile Include="addCliente.Designer.cs">
       <DependentUpon>addCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="addPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addPelicula.Designer.cs">
+      <DependentUpon>addPelicula.cs</DependentUpon>
+    </Compile>
     <Compile Include="addSala.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,12 @@
     </Compile>
     <Compile Include="changeCliente.Designer.cs">
       <DependentUpon>changeCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changePelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changePelicula.Designer.cs">
+      <DependentUpon>changePelicula.cs</DependentUpon>
     </Compile>
     <Compile Include="changeSala.cs">
       <SubType>Form</SubType>
@@ -109,6 +121,12 @@
     <Compile Include="infoCliente.Designer.cs">
       <DependentUpon>infoCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="infoPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoPelicula.Designer.cs">
+      <DependentUpon>infoPelicula.cs</DependentUpon>
+    </Compile>
     <Compile Include="infosala.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,8 +142,14 @@
     <Compile Include="newCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="newCliente.Designer.cs">
+    <Compile Include="newCliente.designer.cs">
       <DependentUpon>newCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newPelicula.Designer.cs">
+      <DependentUpon>newPelicula.cs</DependentUpon>
     </Compile>
     <Compile Include="newSala.cs">
       <SubType>Form</SubType>
@@ -141,6 +165,12 @@
     <Compile Include="reportviewerCliente.Designer.cs">
       <DependentUpon>reportviewerCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="reportviewerPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportviewerPelicula.Designer.cs">
+      <DependentUpon>reportviewerPelicula.cs</DependentUpon>
+    </Compile>
     <Compile Include="reportviewerSala.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +183,12 @@
     <Compile Include="searchCliente.Designer.cs">
       <DependentUpon>searchCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="searchPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchPelicula.Designer.cs">
+      <DependentUpon>searchPelicula.cs</DependentUpon>
+    </Compile>
     <Compile Include="searchSala.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,11 +199,17 @@
     <EmbeddedResource Include="addCliente.resx">
       <DependentUpon>addCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="addPelicula.resx">
+      <DependentUpon>addPelicula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addSala.resx">
       <DependentUpon>addSala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="changeCliente.resx">
       <DependentUpon>changeCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changePelicula.resx">
+      <DependentUpon>changePelicula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="changeSala.resx">
       <DependentUpon>changeSala.cs</DependentUpon>
@@ -178,6 +220,9 @@
     <EmbeddedResource Include="infoCliente.resx">
       <DependentUpon>infoCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="infoPelicula.resx">
+      <DependentUpon>infoPelicula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="infosala.resx">
       <DependentUpon>infosala.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="newCliente.resx">
       <DependentUpon>newCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newPelicula.resx">
+      <DependentUpon>newPelicula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="newSala.resx">
       <DependentUpon>newSala.cs</DependentUpon>
@@ -201,15 +249,22 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="reportCliente.rdlc" />
+    <EmbeddedResource Include="reportPelicula.rdlc" />
     <EmbeddedResource Include="reportSala.rdlc" />
     <EmbeddedResource Include="reportviewerCliente.resx">
       <DependentUpon>reportviewerCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportviewerPelicula.resx">
+      <DependentUpon>reportviewerPelicula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reportviewerSala.resx">
       <DependentUpon>reportviewerSala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="searchCliente.resx">
       <DependentUpon>searchCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchPelicula.resx">
+      <DependentUpon>searchPelicula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="searchSala.resx">
       <DependentUpon>searchSala.cs</DependentUpon>
@@ -291,6 +346,7 @@
     <None Include="Resources\user_40px.png" />
     <None Include="Resources\user_100px.png" />
     <None Include="Resources\pngfind.com-copyright-png-938050.png" />
+    <None Include="Resources\movie_100px.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -105,12 +105,13 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
         ///    &lt;apellido&gt;Manzano&lt;/apellido&gt;
         ///    &lt;email&gt;edwin@hotmail.com&lt;/email&gt;
         ///  &lt;/clientes&gt;
-        ///  &lt;salas&gt;
+        ///  &lt;peliculas&gt;
         ///    &lt;id&gt;1&lt;/id&gt;
-        ///    &lt;nombre&gt;Sala 1&lt;/nombre&gt;
-        ///    &lt;n_asientos&gt;20&lt;/n_asientos&gt;
-        ///  &lt;/salas&gt;
-        ///&lt;/DataCine&gt;.
+        ///    &lt;nombre&gt;007&lt;/nombre&gt;
+        ///    &lt;length_min&gt;130&lt;/length_min&gt;
+        ///  &lt;/peliculas&gt;
+        ///  &lt;salas&gt;
+        ///    &lt;id&gt;1&lt;/i [resto de la cadena truncado]&quot;;.
         /// </summary>
         internal static string Cine {
             get {
@@ -145,6 +146,16 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
             get {
                 object obj = ResourceManager.GetObject("icons8_ticket", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap movie_100px {
+            get {
+                object obj = ResourceManager.GetObject("movie_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

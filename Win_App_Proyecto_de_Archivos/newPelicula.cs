@@ -10,34 +10,29 @@ using System.Windows.Forms;
 
 namespace Win_App_Proyecto_de_Archivos
 {
-    public partial class newCliente : Form
+    public partial class newPelicula : Form
     {
-        public newCliente()
+        public newPelicula()
         {
             InitializeComponent();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            addCliente cliente = new addCliente();
-            cliente.ShowDialog();
+            addPelicula pelicula = new addPelicula();
+            pelicula.ShowDialog();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            searchCliente cliente = new searchCliente();
-            cliente.ShowDialog();
+            searchPelicula pelicula = new searchPelicula();
+            pelicula.ShowDialog();
         }
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
-            reportviewerCliente cliente = new reportviewerCliente();
-            cliente.ShowDialog();
-        }
-
-        private void newCliente_Load(object sender, EventArgs e)
-        {
-            dataCine.ReadXml(Application.StartupPath + "\\Cine.xml");
+            reportviewerPelicula pelicula = new reportviewerPelicula();
+            pelicula.ShowDialog();
         }
     }
 }

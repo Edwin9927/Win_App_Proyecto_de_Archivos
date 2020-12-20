@@ -1,7 +1,7 @@
 ﻿
 namespace Win_App_Proyecto_de_Archivos
 {
-    partial class newCliente
+    partial class newPelicula
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,6 @@ namespace Win_App_Proyecto_de_Archivos
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataCine = new Win_App_Proyecto_de_Archivos.DataCine();
             this.btnReportes = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -38,19 +37,14 @@ namespace Win_App_Proyecto_de_Archivos
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataCine)).BeginInit();
+            this.lengthminDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.peliculasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataCine = new Win_App_Proyecto_de_Archivos.DataCine();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peliculasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCine)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataCine
-            // 
-            this.dataCine.DataSetName = "DataCine";
-            this.dataCine.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnReportes
             // 
@@ -61,10 +55,10 @@ namespace Win_App_Proyecto_de_Archivos
             this.btnReportes.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.report_file_50px;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(516, 314);
+            this.btnReportes.Location = new System.Drawing.Point(516, 312);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(211, 83);
-            this.btnReportes.TabIndex = 9;
+            this.btnReportes.TabIndex = 14;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReportes.UseVisualStyleBackColor = true;
@@ -79,10 +73,10 @@ namespace Win_App_Proyecto_de_Archivos
             this.btnBuscar.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.search_50px;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(516, 187);
+            this.btnBuscar.Location = new System.Drawing.Point(516, 185);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(211, 83);
-            this.btnBuscar.TabIndex = 8;
+            this.btnBuscar.TabIndex = 13;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -97,10 +91,10 @@ namespace Win_App_Proyecto_de_Archivos
             this.btnAgregar.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.plus_math_50px;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(516, 64);
+            this.btnAgregar.Location = new System.Drawing.Point(516, 62);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(211, 83);
-            this.btnAgregar.TabIndex = 7;
+            this.btnAgregar.TabIndex = 12;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -108,12 +102,12 @@ namespace Win_App_Proyecto_de_Archivos
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.pngfind_com_copyright_png_938050;
-            this.pictureBox1.Location = new System.Drawing.Point(141, 22);
+            this.pictureBox1.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.movie_100px;
+            this.pictureBox1.Location = new System.Drawing.Point(141, 20);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(220, 220);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
             // dataGridView1
@@ -125,14 +119,13 @@ namespace Win_App_Proyecto_de_Archivos
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.nombreDataGridViewTextBoxColumn,
-            this.apellidoDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.clientesBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(74, 260);
+            this.lengthminDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.peliculasBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(74, 258);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(343, 173);
-            this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.TabIndex = 10;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -148,30 +141,27 @@ namespace Win_App_Proyecto_de_Archivos
             this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
             this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // apellidoDataGridViewTextBoxColumn
+            // lengthminDataGridViewTextBoxColumn
             // 
-            this.apellidoDataGridViewTextBoxColumn.DataPropertyName = "apellido";
-            this.apellidoDataGridViewTextBoxColumn.HeaderText = "apellido";
-            this.apellidoDataGridViewTextBoxColumn.Name = "apellidoDataGridViewTextBoxColumn";
-            this.apellidoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.lengthminDataGridViewTextBoxColumn.DataPropertyName = "length_min";
+            this.lengthminDataGridViewTextBoxColumn.HeaderText = "length_min";
+            this.lengthminDataGridViewTextBoxColumn.Name = "lengthminDataGridViewTextBoxColumn";
+            this.lengthminDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // emailDataGridViewTextBoxColumn
+            // peliculasBindingSource
             // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
+            this.peliculasBindingSource.DataMember = "peliculas";
+            this.peliculasBindingSource.DataSource = this.dataCine;
             // 
-            // clientesBindingSource
+            // dataCine
             // 
-            this.clientesBindingSource.DataMember = "clientes";
-            this.clientesBindingSource.DataSource = this.dataCine;
+            this.dataCine.DataSetName = "DataCine";
+            this.dataCine.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // newCliente
+            // newPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnReportes);
             this.Controls.Add(this.btnBuscar);
@@ -179,20 +169,18 @@ namespace Win_App_Proyecto_de_Archivos
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "newCliente";
-            this.Text = "newCliente";
-            this.Load += new System.EventHandler(this.newCliente_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataCine)).EndInit();
+            this.Name = "newPelicula";
+            this.Text = "newPelicula";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peliculasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCine)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DataCine dataCine;
         private System.Windows.Forms.Button btnReportes;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnAgregar;
@@ -200,8 +188,8 @@ namespace Win_App_Proyecto_de_Archivos
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn apellidoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource clientesBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lengthminDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource peliculasBindingSource;
+        private DataCine dataCine;
     }
 }
