@@ -70,6 +70,12 @@
     <Compile Include="addCliente.Designer.cs">
       <DependentUpon>addCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="addFuncion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addFuncion.Designer.cs">
+      <DependentUpon>addFuncion.cs</DependentUpon>
+    </Compile>
     <Compile Include="addPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     </Compile>
     <Compile Include="changeCliente.Designer.cs">
       <DependentUpon>changeCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changeFuncion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changeFuncion.Designer.cs">
+      <DependentUpon>changeFuncion.cs</DependentUpon>
     </Compile>
     <Compile Include="changePelicula.cs">
       <SubType>Form</SubType>
@@ -121,6 +133,12 @@
     <Compile Include="infoCliente.Designer.cs">
       <DependentUpon>infoCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="infoFuncion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoFuncion.Designer.cs">
+      <DependentUpon>infoFuncion.cs</DependentUpon>
+    </Compile>
     <Compile Include="infoPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,11 +157,23 @@
     <Compile Include="inicio.Designer.cs">
       <DependentUpon>inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="newAsiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newAsiento.Designer.cs">
+      <DependentUpon>newAsiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="newCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="newCliente.designer.cs">
       <DependentUpon>newCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newFuncion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newFuncion.Designer.cs">
+      <DependentUpon>newFuncion.cs</DependentUpon>
     </Compile>
     <Compile Include="newPelicula.cs">
       <SubType>Form</SubType>
@@ -165,6 +195,12 @@
     <Compile Include="reportviewerCliente.Designer.cs">
       <DependentUpon>reportviewerCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="reportviewerFuncion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportviewerFuncion.Designer.cs">
+      <DependentUpon>reportviewerFuncion.cs</DependentUpon>
+    </Compile>
     <Compile Include="reportviewerPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +219,12 @@
     <Compile Include="searchCliente.Designer.cs">
       <DependentUpon>searchCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="searchFuncion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchFuncion.Designer.cs">
+      <DependentUpon>searchFuncion.cs</DependentUpon>
+    </Compile>
     <Compile Include="searchPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +241,9 @@
     <EmbeddedResource Include="addCliente.resx">
       <DependentUpon>addCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="addFuncion.resx">
+      <DependentUpon>addFuncion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addPelicula.resx">
       <DependentUpon>addPelicula.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="changeCliente.resx">
       <DependentUpon>changeCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeFuncion.resx">
+      <DependentUpon>changeFuncion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="changePelicula.resx">
       <DependentUpon>changePelicula.cs</DependentUpon>
@@ -220,6 +268,9 @@
     <EmbeddedResource Include="infoCliente.resx">
       <DependentUpon>infoCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="infoFuncion.resx">
+      <DependentUpon>infoFuncion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="infoPelicula.resx">
       <DependentUpon>infoPelicula.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,8 +280,14 @@
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="newAsiento.resx">
+      <DependentUpon>newAsiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="newCliente.resx">
       <DependentUpon>newCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newFuncion.resx">
+      <DependentUpon>newFuncion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="newPelicula.resx">
       <DependentUpon>newPelicula.cs</DependentUpon>
@@ -249,10 +306,14 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="reportCliente.rdlc" />
+    <EmbeddedResource Include="reportFuncion.rdlc" />
     <EmbeddedResource Include="reportPelicula.rdlc" />
     <EmbeddedResource Include="reportSala.rdlc" />
     <EmbeddedResource Include="reportviewerCliente.resx">
       <DependentUpon>reportviewerCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportviewerFuncion.resx">
+      <DependentUpon>reportviewerFuncion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reportviewerPelicula.resx">
       <DependentUpon>reportviewerPelicula.cs</DependentUpon>
@@ -262,6 +323,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="searchCliente.resx">
       <DependentUpon>searchCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchFuncion.resx">
+      <DependentUpon>searchFuncion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="searchPelicula.resx">
       <DependentUpon>searchPelicula.cs</DependentUpon>
@@ -347,6 +411,7 @@
     <None Include="Resources\user_100px.png" />
     <None Include="Resources\pngfind.com-copyright-png-938050.png" />
     <None Include="Resources\movie_100px.png" />
+    <None Include="Resources\funcion.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

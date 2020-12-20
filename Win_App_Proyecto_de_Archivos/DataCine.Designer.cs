@@ -363,13 +363,6 @@ namespace Win_App_Proyecto_de_Archivos {
             this.tableasientos = new asientosDataTable();
             base.Tables.Add(this.tableasientos);
             global::System.Data.ForeignKeyConstraint fkc;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_funciones_reservaciones", new global::System.Data.DataColumn[] {
-                        this.tablefunciones.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablereservaciones.id_funcionColumn});
-            this.tablereservaciones.Constraints.Add(fkc);
-            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
-            fkc.DeleteRule = global::System.Data.Rule.Cascade;
-            fkc.UpdateRule = global::System.Data.Rule.Cascade;
             fkc = new global::System.Data.ForeignKeyConstraint("FK_clientes_reservaciones", new global::System.Data.DataColumn[] {
                         this.tableclientes.idColumn}, new global::System.Data.DataColumn[] {
                         this.tablereservaciones.id_clienteColumn});
@@ -377,10 +370,10 @@ namespace Win_App_Proyecto_de_Archivos {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_asientos_asientos_reservados", new global::System.Data.DataColumn[] {
-                        this.tableasientos.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tableasientos_reservados.id_asientoColumn});
-            this.tableasientos_reservados.Constraints.Add(fkc);
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_funciones_reservaciones", new global::System.Data.DataColumn[] {
+                        this.tablefunciones.idColumn}, new global::System.Data.DataColumn[] {
+                        this.tablereservaciones.id_funcionColumn});
+            this.tablereservaciones.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
@@ -391,16 +384,23 @@ namespace Win_App_Proyecto_de_Archivos {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_peliculas_funciones", new global::System.Data.DataColumn[] {
-                        this.tablepeliculas.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablefunciones.id_peliculaColumn});
-            this.tablefunciones.Constraints.Add(fkc);
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_asientos_asientos_reservados", new global::System.Data.DataColumn[] {
+                        this.tableasientos.idColumn}, new global::System.Data.DataColumn[] {
+                        this.tableasientos_reservados.id_asientoColumn});
+            this.tableasientos_reservados.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
             fkc = new global::System.Data.ForeignKeyConstraint("FK_salas_funciones", new global::System.Data.DataColumn[] {
                         this.tablesalas.idColumn}, new global::System.Data.DataColumn[] {
                         this.tablefunciones.id_salaColumn});
+            this.tablefunciones.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.Cascade;
+            fkc.UpdateRule = global::System.Data.Rule.Cascade;
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_peliculas_funciones", new global::System.Data.DataColumn[] {
+                        this.tablepeliculas.idColumn}, new global::System.Data.DataColumn[] {
+                        this.tablefunciones.id_peliculaColumn});
             this.tablefunciones.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
@@ -941,10 +941,10 @@ namespace Win_App_Proyecto_de_Archivos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public reservacionesRow AddreservacionesRow(int id, int id_funcion, int id_cliente) {
+            public reservacionesRow AddreservacionesRow(int id_funcion, int id_cliente) {
                 reservacionesRow rowreservacionesRow = ((reservacionesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
+                        null,
                         id_funcion,
                         id_cliente};
                 rowreservacionesRow.ItemArray = columnValuesArray;
@@ -994,6 +994,8 @@ namespace Win_App_Proyecto_de_Archivos {
                                 this.columnid}, true));
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_cliente}, false));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = 1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
                 this.columnid_cliente.Unique = true;
@@ -1230,10 +1232,10 @@ namespace Win_App_Proyecto_de_Archivos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public asientos_reservadosRow Addasientos_reservadosRow(int id, int id_reservacion, int id_asiento) {
+            public asientos_reservadosRow Addasientos_reservadosRow(int id_reservacion, int id_asiento) {
                 asientos_reservadosRow rowasientos_reservadosRow = ((asientos_reservadosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
+                        null,
                         id_reservacion,
                         id_asiento};
                 rowasientos_reservadosRow.ItemArray = columnValuesArray;
@@ -1281,6 +1283,8 @@ namespace Win_App_Proyecto_de_Archivos {
                 base.Columns.Add(this.columnid_asiento);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("id_asientos_reservados", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = 1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
             }
@@ -1526,10 +1530,10 @@ namespace Win_App_Proyecto_de_Archivos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public funcionesRow AddfuncionesRow(int id, int id_pelicula, int id_sala, System.DateTime hora_inicio) {
+            public funcionesRow AddfuncionesRow(int id_pelicula, int id_sala, System.DateTime hora_inicio) {
                 funcionesRow rowfuncionesRow = ((funcionesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
+                        null,
                         id_pelicula,
                         id_sala,
                         hora_inicio};
@@ -1583,6 +1587,8 @@ namespace Win_App_Proyecto_de_Archivos {
                                 this.columnid}, true));
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_pelicula}, false));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = 1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
                 this.columnid_pelicula.Unique = true;

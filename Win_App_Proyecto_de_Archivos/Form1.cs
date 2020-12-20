@@ -87,5 +87,10 @@ namespace Win_App_Proyecto_de_Archivos
         {
             AbrirFormEnPanel(new newPelicula());
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new newFuncion());
+        }
     }
 }

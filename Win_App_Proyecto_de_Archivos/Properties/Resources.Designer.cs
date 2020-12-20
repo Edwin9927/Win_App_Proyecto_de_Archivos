@@ -105,13 +105,12 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
         ///    &lt;apellido&gt;Manzano&lt;/apellido&gt;
         ///    &lt;email&gt;edwin@hotmail.com&lt;/email&gt;
         ///  &lt;/clientes&gt;
-        ///  &lt;peliculas&gt;
-        ///    &lt;id&gt;1&lt;/id&gt;
-        ///    &lt;nombre&gt;007&lt;/nombre&gt;
-        ///    &lt;length_min&gt;130&lt;/length_min&gt;
-        ///  &lt;/peliculas&gt;
-        ///  &lt;salas&gt;
-        ///    &lt;id&gt;1&lt;/i [resto de la cadena truncado]&quot;;.
+        ///  &lt;clientes&gt;
+        ///    &lt;id&gt;4&lt;/id&gt;
+        ///    &lt;nombre&gt;Fidel&lt;/nombre&gt;
+        ///    &lt;apellido&gt;Avalos&lt;/apellido&gt;
+        ///    &lt;email&gt;fidel03@gmail.com&lt;/email&gt;
+        ///  [resto de la cadena truncado]&quot;;.
         /// </summary>
         internal static string Cine {
             get {
@@ -135,6 +134,16 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
         internal static System.Drawing.Bitmap delete_40px {
             get {
                 object obj = ResourceManager.GetObject("delete_40px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap funcion {
+            get {
+                object obj = ResourceManager.GetObject("funcion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
