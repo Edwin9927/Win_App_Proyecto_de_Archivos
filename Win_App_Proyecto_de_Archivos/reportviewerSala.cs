@@ -15,7 +15,7 @@ namespace Win_App_Proyecto_de_Archivos
         public reportviewerSala()
         {
             InitializeComponent();
-            DataCine.ReadXml(Application.StartupPath + "\\Cine.xml");
+            DataCine.ReadXml(Application.StartupPath + "\\Sala.xml");
         }
 
         private void reportviewerSala_Load(object sender, EventArgs e)

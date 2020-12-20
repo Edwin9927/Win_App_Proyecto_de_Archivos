@@ -16,5 +16,17 @@ namespace Win_App_Proyecto_de_Archivos
         {
             InitializeComponent();
         }
+
+        private void newCliente_Load(object sender, EventArgs e)
+        {
+            dataCine.EnforceConstraints = false;
+            dataCine.ReadXml(Application.StartupPath + "\\Cliente.xml");
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            addCliente add = new addCliente();
+            add.ShowDialog();
+        }
     }
 }

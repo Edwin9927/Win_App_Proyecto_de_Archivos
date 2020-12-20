@@ -19,7 +19,14 @@ namespace Win_App_Proyecto_de_Archivos
 
         private void newSala_Load(object sender, EventArgs e)
         {
-            dataCine.ReadXml(Application.StartupPath + "\\Cine.xml");
+            try
+            {
+                dataCine.ReadXml(Application.StartupPath + "\\Sala.xml");
+            }catch
+            {
+
+            }
+            
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

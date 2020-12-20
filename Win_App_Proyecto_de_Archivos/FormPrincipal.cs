@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Win_App_Proyecto_de_Archivos
 {
-    public partial class Form1 : Form
+    public partial class FormPrincipal : Form
     {
-        public Form1()
+        public FormPrincipal()
         {
             InitializeComponent();
         }
@@ -50,16 +50,7 @@ namespace Win_App_Proyecto_de_Archivos
         }
 
         private void btninicio_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                dataCine1.ReadXml(Application.StartupPath + "\\Cine.xml");
-            }
-            catch
-            {
-                dataCine1.WriteXml(Application.StartupPath + "\\Cine.xml");
-            }
-            
+        {            
             AbrirFormEnPanel(new inicio());
         }
 
@@ -75,7 +66,27 @@ namespace Win_App_Proyecto_de_Archivos
 
         private void btnSala_Click(object sender, EventArgs e)
         {
+            try
+            {
+                dataCine1.ReadXml(Application.StartupPath + "\\Sala.xml");
+            }
+            catch
+            {
+                dataCine1.WriteXml(Application.StartupPath + "\\Sala.xml");
+            }
             AbrirFormEnPanel(new newSala());
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dataCine1.ReadXml(Application.StartupPath + "\\Cliente.xml");
+            }catch
+            {
+                //dataCine1.WriteXml(Application.StartupPath + "\\Cliente.xml");
+            }
+            AbrirFormEnPanel(new newCliente());
         }
     }
 }

@@ -12,7 +12,7 @@
   <xs:element name="DataCine" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataCine" msprop:Generator_UserDSName="DataCine">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="clientes" msprop:Generator_TableClassName="clientesDataTable" msprop:Generator_TableVarName="tableclientes" msprop:Generator_TablePropName="clientes" msprop:Generator_RowDeletingName="clientesRowDeleting" msprop:Generator_RowChangingName="clientesRowChanging" msprop:Generator_RowEvHandlerName="clientesRowChangeEventHandler" msprop:Generator_RowDeletedName="clientesRowDeleted" msprop:Generator_UserTableName="clientes" msprop:Generator_RowChangedName="clientesRowChanged" msprop:Generator_RowEvArgName="clientesRowChangeEvent" msprop:Generator_RowClassName="clientesRow">
+        <xs:element name="clientes" msprop:Generator_TableClassName="clientesDataTable" msprop:Generator_TableVarName="tableclientes" msprop:Generator_RowChangedName="clientesRowChanged" msprop:Generator_TablePropName="clientes" msprop:Generator_RowDeletingName="clientesRowDeleting" msprop:Generator_RowChangingName="clientesRowChanging" msprop:Generator_RowEvHandlerName="clientesRowChangeEventHandler" msprop:Generator_RowDeletedName="clientesRowDeleted" msprop:Generator_RowClassName="clientesRow" msprop:Generator_UserTableName="clientes" msprop:Generator_RowEvArgName="clientesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -22,7 +22,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="reservaciones" msprop:Generator_TableClassName="reservacionesDataTable" msprop:Generator_TableVarName="tablereservaciones" msprop:Generator_TablePropName="reservaciones" msprop:Generator_RowDeletingName="reservacionesRowDeleting" msprop:Generator_RowChangingName="reservacionesRowChanging" msprop:Generator_RowEvHandlerName="reservacionesRowChangeEventHandler" msprop:Generator_RowDeletedName="reservacionesRowDeleted" msprop:Generator_UserTableName="reservaciones" msprop:Generator_RowChangedName="reservacionesRowChanged" msprop:Generator_RowEvArgName="reservacionesRowChangeEvent" msprop:Generator_RowClassName="reservacionesRow">
+        <xs:element name="reservaciones" msprop:Generator_TableClassName="reservacionesDataTable" msprop:Generator_TableVarName="tablereservaciones" msprop:Generator_RowChangedName="reservacionesRowChanged" msprop:Generator_TablePropName="reservaciones" msprop:Generator_RowDeletingName="reservacionesRowDeleting" msprop:Generator_RowChangingName="reservacionesRowChanging" msprop:Generator_RowEvHandlerName="reservacionesRowChangeEventHandler" msprop:Generator_RowDeletedName="reservacionesRowDeleted" msprop:Generator_RowClassName="reservacionesRow" msprop:Generator_UserTableName="reservaciones" msprop:Generator_RowEvArgName="reservacionesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -31,7 +31,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="asientos_reservados" msprop:Generator_TableClassName="asientos_reservadosDataTable" msprop:Generator_TableVarName="tableasientos_reservados" msprop:Generator_TablePropName="asientos_reservados" msprop:Generator_RowDeletingName="asientos_reservadosRowDeleting" msprop:Generator_RowChangingName="asientos_reservadosRowChanging" msprop:Generator_RowEvHandlerName="asientos_reservadosRowChangeEventHandler" msprop:Generator_RowDeletedName="asientos_reservadosRowDeleted" msprop:Generator_UserTableName="asientos_reservados" msprop:Generator_RowChangedName="asientos_reservadosRowChanged" msprop:Generator_RowEvArgName="asientos_reservadosRowChangeEvent" msprop:Generator_RowClassName="asientos_reservadosRow">
+        <xs:element name="asientos_reservados" msprop:Generator_TableClassName="asientos_reservadosDataTable" msprop:Generator_TableVarName="tableasientos_reservados" msprop:Generator_RowChangedName="asientos_reservadosRowChanged" msprop:Generator_TablePropName="asientos_reservados" msprop:Generator_RowDeletingName="asientos_reservadosRowDeleting" msprop:Generator_RowChangingName="asientos_reservadosRowChanging" msprop:Generator_RowEvHandlerName="asientos_reservadosRowChangeEventHandler" msprop:Generator_RowDeletedName="asientos_reservadosRowDeleted" msprop:Generator_RowClassName="asientos_reservadosRow" msprop:Generator_UserTableName="asientos_reservados" msprop:Generator_RowEvArgName="asientos_reservadosRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -40,7 +40,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="funciones" msprop:Generator_TableClassName="funcionesDataTable" msprop:Generator_TableVarName="tablefunciones" msprop:Generator_TablePropName="funciones" msprop:Generator_RowDeletingName="funcionesRowDeleting" msprop:Generator_RowChangingName="funcionesRowChanging" msprop:Generator_RowEvHandlerName="funcionesRowChangeEventHandler" msprop:Generator_RowDeletedName="funcionesRowDeleted" msprop:Generator_UserTableName="funciones" msprop:Generator_RowChangedName="funcionesRowChanged" msprop:Generator_RowEvArgName="funcionesRowChangeEvent" msprop:Generator_RowClassName="funcionesRow">
+        <xs:element name="funciones" msprop:Generator_TableClassName="funcionesDataTable" msprop:Generator_TableVarName="tablefunciones" msprop:Generator_RowChangedName="funcionesRowChanged" msprop:Generator_TablePropName="funciones" msprop:Generator_RowDeletingName="funcionesRowDeleting" msprop:Generator_RowChangingName="funcionesRowChanging" msprop:Generator_RowEvHandlerName="funcionesRowChangeEventHandler" msprop:Generator_RowDeletedName="funcionesRowDeleted" msprop:Generator_RowClassName="funcionesRow" msprop:Generator_UserTableName="funciones" msprop:Generator_RowEvArgName="funcionesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -50,7 +50,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="peliculas" msprop:Generator_TableClassName="peliculasDataTable" msprop:Generator_TableVarName="tablepeliculas" msprop:Generator_TablePropName="peliculas" msprop:Generator_RowDeletingName="peliculasRowDeleting" msprop:Generator_RowChangingName="peliculasRowChanging" msprop:Generator_RowEvHandlerName="peliculasRowChangeEventHandler" msprop:Generator_RowDeletedName="peliculasRowDeleted" msprop:Generator_UserTableName="peliculas" msprop:Generator_RowChangedName="peliculasRowChanged" msprop:Generator_RowEvArgName="peliculasRowChangeEvent" msprop:Generator_RowClassName="peliculasRow">
+        <xs:element name="peliculas" msprop:Generator_TableClassName="peliculasDataTable" msprop:Generator_TableVarName="tablepeliculas" msprop:Generator_RowChangedName="peliculasRowChanged" msprop:Generator_TablePropName="peliculas" msprop:Generator_RowDeletingName="peliculasRowDeleting" msprop:Generator_RowChangingName="peliculasRowChanging" msprop:Generator_RowEvHandlerName="peliculasRowChangeEventHandler" msprop:Generator_RowDeletedName="peliculasRowDeleted" msprop:Generator_RowClassName="peliculasRow" msprop:Generator_UserTableName="peliculas" msprop:Generator_RowEvArgName="peliculasRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -59,7 +59,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="salas" msprop:Generator_TableClassName="salasDataTable" msprop:Generator_TableVarName="tablesalas" msprop:Generator_TablePropName="salas" msprop:Generator_RowDeletingName="salasRowDeleting" msprop:Generator_RowChangingName="salasRowChanging" msprop:Generator_RowEvHandlerName="salasRowChangeEventHandler" msprop:Generator_RowDeletedName="salasRowDeleted" msprop:Generator_UserTableName="salas" msprop:Generator_RowChangedName="salasRowChanged" msprop:Generator_RowEvArgName="salasRowChangeEvent" msprop:Generator_RowClassName="salasRow">
+        <xs:element name="salas" msprop:Generator_TableClassName="salasDataTable" msprop:Generator_TableVarName="tablesalas" msprop:Generator_RowChangedName="salasRowChanged" msprop:Generator_TablePropName="salas" msprop:Generator_RowDeletingName="salasRowDeleting" msprop:Generator_RowChangingName="salasRowChanging" msprop:Generator_RowEvHandlerName="salasRowChangeEventHandler" msprop:Generator_RowDeletedName="salasRowDeleted" msprop:Generator_RowClassName="salasRow" msprop:Generator_UserTableName="salas" msprop:Generator_RowEvArgName="salasRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -68,7 +68,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="asientos" msprop:Generator_TableClassName="asientosDataTable" msprop:Generator_TableVarName="tableasientos" msprop:Generator_TablePropName="asientos" msprop:Generator_RowDeletingName="asientosRowDeleting" msprop:Generator_RowChangingName="asientosRowChanging" msprop:Generator_RowEvHandlerName="asientosRowChangeEventHandler" msprop:Generator_RowDeletedName="asientosRowDeleted" msprop:Generator_UserTableName="asientos" msprop:Generator_RowChangedName="asientosRowChanged" msprop:Generator_RowEvArgName="asientosRowChangeEvent" msprop:Generator_RowClassName="asientosRow">
+        <xs:element name="asientos" msprop:Generator_TableClassName="asientosDataTable" msprop:Generator_TableVarName="tableasientos" msprop:Generator_RowChangedName="asientosRowChanged" msprop:Generator_TablePropName="asientos" msprop:Generator_RowDeletingName="asientosRowDeleting" msprop:Generator_RowChangingName="asientosRowChanging" msprop:Generator_RowEvHandlerName="asientosRowChangeEventHandler" msprop:Generator_RowDeletedName="asientosRowDeleted" msprop:Generator_RowClassName="asientosRow" msprop:Generator_UserTableName="asientos" msprop:Generator_RowEvArgName="asientosRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -122,33 +122,33 @@
       <xs:selector xpath=".//mstns:asientos" />
       <xs:field xpath="mstns:id" />
     </xs:unique>
-    <xs:keyref name="FK_salas_asientos" refer="id_salas" msprop:rel_Generator_UserChildTable="asientos" msprop:rel_Generator_ChildPropName="GetasientosRows" msprop:rel_Generator_UserRelationName="FK_salas_asientos" msprop:rel_Generator_ParentPropName="salasRow" msprop:rel_Generator_RelationVarName="relationFK_salas_asientos" msprop:rel_Generator_UserParentTable="salas">
+    <xs:keyref name="FK_salas_asientos" refer="id_salas" msdata:ConstraintOnly="true">
       <xs:selector xpath=".//mstns:asientos" />
       <xs:field xpath="mstns:id_sala" />
     </xs:keyref>
-    <xs:keyref name="FK_salas_funciones" refer="id_salas" msprop:rel_Generator_UserChildTable="funciones" msprop:rel_Generator_ChildPropName="GetfuncionesRows" msprop:rel_Generator_UserRelationName="FK_salas_funciones" msprop:rel_Generator_RelationVarName="relationFK_salas_funciones" msprop:rel_Generator_UserParentTable="salas" msprop:rel_Generator_ParentPropName="salasRow">
+    <xs:keyref name="FK_salas_funciones" refer="id_salas" msdata:ConstraintOnly="true">
       <xs:selector xpath=".//mstns:funciones" />
       <xs:field xpath="mstns:id_sala" />
     </xs:keyref>
-    <xs:keyref name="FK_peliculas_funciones" refer="id_peliculas" msprop:rel_Generator_UserChildTable="funciones" msprop:rel_Generator_ChildPropName="GetfuncionesRows" msprop:rel_Generator_UserRelationName="FK_peliculas_funciones" msprop:rel_Generator_RelationVarName="relationFK_peliculas_funciones" msprop:rel_Generator_UserParentTable="peliculas" msprop:rel_Generator_ParentPropName="peliculasRow">
+    <xs:keyref name="FK_peliculas_funciones" refer="id_peliculas" msdata:ConstraintOnly="true">
       <xs:selector xpath=".//mstns:funciones" />
       <xs:field xpath="mstns:id_pelicula" />
     </xs:keyref>
-    <xs:keyref name="FK_reservaciones_asientos_reservados" refer="id_reservaciones" msprop:rel_Generator_UserChildTable="asientos_reservados" msprop:rel_Generator_ChildPropName="Getasientos_reservadosRows" msprop:rel_Generator_UserRelationName="FK_reservaciones_asientos_reservados" msprop:rel_Generator_ParentPropName="reservacionesRow" msprop:rel_Generator_RelationVarName="relationFK_reservaciones_asientos_reservados" msprop:rel_Generator_UserParentTable="reservaciones">
-      <xs:selector xpath=".//mstns:asientos_reservados" />
-      <xs:field xpath="mstns:id_reservacion" />
-    </xs:keyref>
-    <xs:keyref name="FK_asientos_asientos_reservados" refer="id_asientos" msprop:rel_Generator_UserChildTable="asientos_reservados" msprop:rel_Generator_ChildPropName="Getasientos_reservadosRows" msprop:rel_Generator_UserRelationName="FK_asientos_asientos_reservados" msprop:rel_Generator_RelationVarName="relationFK_asientos_asientos_reservados" msprop:rel_Generator_UserParentTable="asientos" msprop:rel_Generator_ParentPropName="asientosRow">
+    <xs:keyref name="FK_asientos_asientos_reservados" refer="id_asientos" msdata:ConstraintOnly="true">
       <xs:selector xpath=".//mstns:asientos_reservados" />
       <xs:field xpath="mstns:id_asiento" />
     </xs:keyref>
-    <xs:keyref name="FK_clientes_reservaciones" refer="id_cliente" msprop:rel_Generator_UserChildTable="reservaciones" msprop:rel_Generator_ChildPropName="GetreservacionesRows" msprop:rel_Generator_UserRelationName="FK_clientes_reservaciones" msprop:rel_Generator_ParentPropName="clientesRow" msprop:rel_Generator_RelationVarName="relationFK_clientes_reservaciones" msprop:rel_Generator_UserParentTable="clientes">
-      <xs:selector xpath=".//mstns:reservaciones" />
-      <xs:field xpath="mstns:id_cliente" />
+    <xs:keyref name="FK_reservaciones_asientos_reservados" refer="id_reservaciones" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:asientos_reservados" />
+      <xs:field xpath="mstns:id_reservacion" />
     </xs:keyref>
-    <xs:keyref name="FK_funciones_reservaciones" refer="id_funciones" msprop:rel_Generator_UserChildTable="reservaciones" msprop:rel_Generator_ChildPropName="GetreservacionesRows" msprop:rel_Generator_UserRelationName="FK_funciones_reservaciones" msprop:rel_Generator_RelationVarName="relationFK_funciones_reservaciones" msprop:rel_Generator_UserParentTable="funciones" msprop:rel_Generator_ParentPropName="funcionesRow">
+    <xs:keyref name="FK_funciones_reservaciones" refer="id_funciones" msdata:ConstraintOnly="true">
       <xs:selector xpath=".//mstns:reservaciones" />
       <xs:field xpath="mstns:id_funcion" />
+    </xs:keyref>
+    <xs:keyref name="FK_clientes_reservaciones" refer="id_cliente" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:reservaciones" />
+      <xs:field xpath="mstns:id_cliente" />
     </xs:keyref>
   </xs:element>
 </xs:schema>

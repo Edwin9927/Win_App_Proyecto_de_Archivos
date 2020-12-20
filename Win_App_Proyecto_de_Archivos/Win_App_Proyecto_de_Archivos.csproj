@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addCliente.Designer.cs">
+      <DependentUpon>addCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="addSala.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,11 +91,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataCine.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="infosala.cs">
       <SubType>Form</SubType>
@@ -130,14 +136,17 @@
       <DependentUpon>searchSala.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="addCliente.resx">
+      <DependentUpon>addCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addSala.resx">
       <DependentUpon>addSala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="changeSala.resx">
       <DependentUpon>changeSala.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="infosala.resx">
       <DependentUpon>infosala.cs</DependentUpon>

@@ -22,7 +22,7 @@ namespace Win_App_Proyecto_de_Archivos
 
         private void addSala_Load(object sender, EventArgs e)
         {
-            dataCine.ReadXml(Application.StartupPath + "\\Cine.xml");
+            dataCine.ReadXml(Application.StartupPath + "\\Sala.xml");
         }
 
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
@@ -81,7 +81,7 @@ namespace Win_App_Proyecto_de_Archivos
 
                 dataCine.salas.Rows.Add(datos);
 
-                dataCine.WriteXml(Application.StartupPath + "\\Cine.xml");
+                dataCine.WriteXml(Application.StartupPath + "\\Sala.xml");
 
                 MessageBox.Show("Sala agregada correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

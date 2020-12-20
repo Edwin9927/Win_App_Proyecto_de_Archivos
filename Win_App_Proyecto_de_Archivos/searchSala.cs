@@ -94,7 +94,7 @@ namespace Win_App_Proyecto_de_Archivos
 
         private void searchSala_Load(object sender, EventArgs e)
         {
-            dataCine1.ReadXml(Application.StartupPath + "\\Cine.xml");
+            dataCine1.ReadXml(Application.StartupPath + "\\Sala.xml");
         }
     }
 }

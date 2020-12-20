@@ -4,5 +4,8 @@
 
     partial class DataCine
     {
+        partial class asientos_reservadosDataTable
+        {
+        }
     }
 }
