@@ -38,20 +38,6 @@ namespace Win_App_Proyecto_de_Archivos {
         
         private asientosDataTable tableasientos;
         
-        private global::System.Data.DataRelation relationFK_clientes_reservaciones;
-        
-        private global::System.Data.DataRelation relationFK_funciones_reservaciones;
-        
-        private global::System.Data.DataRelation relationFK_reservaciones_asientos_reservados;
-        
-        private global::System.Data.DataRelation relationFK_asientos_asientos_reservados;
-        
-        private global::System.Data.DataRelation relationFK_salas_funciones;
-        
-        private global::System.Data.DataRelation relationFK_peliculas_funciones;
-        
-        private global::System.Data.DataRelation relationFK_salas_asientos;
-        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -352,13 +338,6 @@ namespace Win_App_Proyecto_de_Archivos {
                     this.tableasientos.InitVars();
                 }
             }
-            this.relationFK_clientes_reservaciones = this.Relations["FK_clientes_reservaciones"];
-            this.relationFK_funciones_reservaciones = this.Relations["FK_funciones_reservaciones"];
-            this.relationFK_reservaciones_asientos_reservados = this.Relations["FK_reservaciones_asientos_reservados"];
-            this.relationFK_asientos_asientos_reservados = this.Relations["FK_asientos_asientos_reservados"];
-            this.relationFK_salas_funciones = this.Relations["FK_salas_funciones"];
-            this.relationFK_peliculas_funciones = this.Relations["FK_peliculas_funciones"];
-            this.relationFK_salas_asientos = this.Relations["FK_salas_asientos"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -384,13 +363,6 @@ namespace Win_App_Proyecto_de_Archivos {
             this.tableasientos = new asientosDataTable();
             base.Tables.Add(this.tableasientos);
             global::System.Data.ForeignKeyConstraint fkc;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_clientes_reservaciones", new global::System.Data.DataColumn[] {
-                        this.tableclientes.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablereservaciones.id_clienteColumn});
-            this.tablereservaciones.Constraints.Add(fkc);
-            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
-            fkc.DeleteRule = global::System.Data.Rule.Cascade;
-            fkc.UpdateRule = global::System.Data.Rule.Cascade;
             fkc = new global::System.Data.ForeignKeyConstraint("FK_funciones_reservaciones", new global::System.Data.DataColumn[] {
                         this.tablefunciones.idColumn}, new global::System.Data.DataColumn[] {
                         this.tablereservaciones.id_funcionColumn});
@@ -398,10 +370,10 @@ namespace Win_App_Proyecto_de_Archivos {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_reservaciones_asientos_reservados", new global::System.Data.DataColumn[] {
-                        this.tablereservaciones.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tableasientos_reservados.id_reservacionColumn});
-            this.tableasientos_reservados.Constraints.Add(fkc);
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_clientes_reservaciones", new global::System.Data.DataColumn[] {
+                        this.tableclientes.idColumn}, new global::System.Data.DataColumn[] {
+                        this.tablereservaciones.id_clienteColumn});
+            this.tablereservaciones.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
@@ -412,16 +384,23 @@ namespace Win_App_Proyecto_de_Archivos {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_salas_funciones", new global::System.Data.DataColumn[] {
-                        this.tablesalas.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablefunciones.id_salaColumn});
-            this.tablefunciones.Constraints.Add(fkc);
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_reservaciones_asientos_reservados", new global::System.Data.DataColumn[] {
+                        this.tablereservaciones.idColumn}, new global::System.Data.DataColumn[] {
+                        this.tableasientos_reservados.id_reservacionColumn});
+            this.tableasientos_reservados.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
             fkc = new global::System.Data.ForeignKeyConstraint("FK_peliculas_funciones", new global::System.Data.DataColumn[] {
                         this.tablepeliculas.idColumn}, new global::System.Data.DataColumn[] {
                         this.tablefunciones.id_peliculaColumn});
+            this.tablefunciones.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.Cascade;
+            fkc.UpdateRule = global::System.Data.Rule.Cascade;
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_salas_funciones", new global::System.Data.DataColumn[] {
+                        this.tablesalas.idColumn}, new global::System.Data.DataColumn[] {
+                        this.tablefunciones.id_salaColumn});
             this.tablefunciones.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
@@ -433,34 +412,6 @@ namespace Win_App_Proyecto_de_Archivos {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            this.relationFK_clientes_reservaciones = new global::System.Data.DataRelation("FK_clientes_reservaciones", new global::System.Data.DataColumn[] {
-                        this.tableclientes.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablereservaciones.id_clienteColumn}, false);
-            this.Relations.Add(this.relationFK_clientes_reservaciones);
-            this.relationFK_funciones_reservaciones = new global::System.Data.DataRelation("FK_funciones_reservaciones", new global::System.Data.DataColumn[] {
-                        this.tablefunciones.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablereservaciones.id_funcionColumn}, false);
-            this.Relations.Add(this.relationFK_funciones_reservaciones);
-            this.relationFK_reservaciones_asientos_reservados = new global::System.Data.DataRelation("FK_reservaciones_asientos_reservados", new global::System.Data.DataColumn[] {
-                        this.tablereservaciones.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tableasientos_reservados.id_reservacionColumn}, false);
-            this.Relations.Add(this.relationFK_reservaciones_asientos_reservados);
-            this.relationFK_asientos_asientos_reservados = new global::System.Data.DataRelation("FK_asientos_asientos_reservados", new global::System.Data.DataColumn[] {
-                        this.tableasientos.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tableasientos_reservados.id_asientoColumn}, false);
-            this.Relations.Add(this.relationFK_asientos_asientos_reservados);
-            this.relationFK_salas_funciones = new global::System.Data.DataRelation("FK_salas_funciones", new global::System.Data.DataColumn[] {
-                        this.tablesalas.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablefunciones.id_salaColumn}, false);
-            this.Relations.Add(this.relationFK_salas_funciones);
-            this.relationFK_peliculas_funciones = new global::System.Data.DataRelation("FK_peliculas_funciones", new global::System.Data.DataColumn[] {
-                        this.tablepeliculas.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablefunciones.id_peliculaColumn}, false);
-            this.Relations.Add(this.relationFK_peliculas_funciones);
-            this.relationFK_salas_asientos = new global::System.Data.DataRelation("FK_salas_asientos", new global::System.Data.DataColumn[] {
-                        this.tablesalas.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tableasientos.id_salaColumn}, false);
-            this.Relations.Add(this.relationFK_salas_asientos);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -990,18 +941,12 @@ namespace Win_App_Proyecto_de_Archivos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public reservacionesRow AddreservacionesRow(int id, funcionesRow parentfuncionesRowByFK_funciones_reservaciones, clientesRow parentclientesRowByFK_clientes_reservaciones) {
+            public reservacionesRow AddreservacionesRow(int id, int id_funcion, int id_cliente) {
                 reservacionesRow rowreservacionesRow = ((reservacionesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id,
-                        null,
-                        null};
-                if ((parentfuncionesRowByFK_funciones_reservaciones != null)) {
-                    columnValuesArray[1] = parentfuncionesRowByFK_funciones_reservaciones[0];
-                }
-                if ((parentclientesRowByFK_clientes_reservaciones != null)) {
-                    columnValuesArray[2] = parentclientesRowByFK_clientes_reservaciones[0];
-                }
+                        id_funcion,
+                        id_cliente};
                 rowreservacionesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowreservacionesRow);
                 return rowreservacionesRow;
@@ -1285,18 +1230,12 @@ namespace Win_App_Proyecto_de_Archivos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public asientos_reservadosRow Addasientos_reservadosRow(int id, reservacionesRow parentreservacionesRowByFK_reservaciones_asientos_reservados, asientosRow parentasientosRowByFK_asientos_asientos_reservados) {
+            public asientos_reservadosRow Addasientos_reservadosRow(int id, int id_reservacion, int id_asiento) {
                 asientos_reservadosRow rowasientos_reservadosRow = ((asientos_reservadosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id,
-                        null,
-                        null};
-                if ((parentreservacionesRowByFK_reservaciones_asientos_reservados != null)) {
-                    columnValuesArray[1] = parentreservacionesRowByFK_reservaciones_asientos_reservados[0];
-                }
-                if ((parentasientosRowByFK_asientos_asientos_reservados != null)) {
-                    columnValuesArray[2] = parentasientosRowByFK_asientos_asientos_reservados[0];
-                }
+                        id_reservacion,
+                        id_asiento};
                 rowasientos_reservadosRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowasientos_reservadosRow);
                 return rowasientos_reservadosRow;
@@ -1587,19 +1526,13 @@ namespace Win_App_Proyecto_de_Archivos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public funcionesRow AddfuncionesRow(int id, peliculasRow parentpeliculasRowByFK_peliculas_funciones, salasRow parentsalasRowByFK_salas_funciones, System.DateTime hora_inicio) {
+            public funcionesRow AddfuncionesRow(int id, int id_pelicula, int id_sala, System.DateTime hora_inicio) {
                 funcionesRow rowfuncionesRow = ((funcionesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id,
-                        null,
-                        null,
+                        id_pelicula,
+                        id_sala,
                         hora_inicio};
-                if ((parentpeliculasRowByFK_peliculas_funciones != null)) {
-                    columnValuesArray[1] = parentpeliculasRowByFK_peliculas_funciones[0];
-                }
-                if ((parentsalasRowByFK_salas_funciones != null)) {
-                    columnValuesArray[2] = parentsalasRowByFK_salas_funciones[0];
-                }
                 rowfuncionesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowfuncionesRow);
                 return rowfuncionesRow;
@@ -2472,16 +2405,13 @@ namespace Win_App_Proyecto_de_Archivos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public asientosRow AddasientosRow(char fila, int numero, salasRow parentsalasRowByFK_salas_asientos) {
+            public asientosRow AddasientosRow(char fila, int numero, int id_sala) {
                 asientosRow rowasientosRow = ((asientosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         fila,
                         numero,
-                        null};
-                if ((parentsalasRowByFK_salas_asientos != null)) {
-                    columnValuesArray[3] = parentsalasRowByFK_salas_asientos[0];
-                }
+                        id_sala};
                 rowasientosRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowasientosRow);
                 return rowasientosRow;
@@ -2768,17 +2698,6 @@ namespace Win_App_Proyecto_de_Archivos {
             public void SetemailNull() {
                 this[this.tableclientes.emailColumn] = global::System.Convert.DBNull;
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public reservacionesRow[] GetreservacionesRows() {
-                if ((this.Table.ChildRelations["FK_clientes_reservaciones"] == null)) {
-                    return new reservacionesRow[0];
-                }
-                else {
-                    return ((reservacionesRow[])(base.GetChildRows(this.Table.ChildRelations["FK_clientes_reservaciones"])));
-                }
-            }
         }
         
         /// <summary>
@@ -2840,28 +2759,6 @@ namespace Win_App_Proyecto_de_Archivos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public clientesRow clientesRow {
-                get {
-                    return ((clientesRow)(this.GetParentRow(this.Table.ParentRelations["FK_clientes_reservaciones"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_clientes_reservaciones"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public funcionesRow funcionesRow {
-                get {
-                    return ((funcionesRow)(this.GetParentRow(this.Table.ParentRelations["FK_funciones_reservaciones"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_funciones_reservaciones"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool Isid_funcionNull() {
                 return this.IsNull(this.tablereservaciones.id_funcionColumn);
             }
@@ -2882,17 +2779,6 @@ namespace Win_App_Proyecto_de_Archivos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void Setid_clienteNull() {
                 this[this.tablereservaciones.id_clienteColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public asientos_reservadosRow[] Getasientos_reservadosRows() {
-                if ((this.Table.ChildRelations["FK_reservaciones_asientos_reservados"] == null)) {
-                    return new asientos_reservadosRow[0];
-                }
-                else {
-                    return ((asientos_reservadosRow[])(base.GetChildRows(this.Table.ChildRelations["FK_reservaciones_asientos_reservados"])));
-                }
             }
         }
         
@@ -2951,28 +2837,6 @@ namespace Win_App_Proyecto_de_Archivos {
                 }
                 set {
                     this[this.tableasientos_reservados.id_asientoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public reservacionesRow reservacionesRow {
-                get {
-                    return ((reservacionesRow)(this.GetParentRow(this.Table.ParentRelations["FK_reservaciones_asientos_reservados"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_reservaciones_asientos_reservados"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public asientosRow asientosRow {
-                get {
-                    return ((asientosRow)(this.GetParentRow(this.Table.ParentRelations["FK_asientos_asientos_reservados"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_asientos_asientos_reservados"]);
                 }
             }
             
@@ -3076,28 +2940,6 @@ namespace Win_App_Proyecto_de_Archivos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public salasRow salasRow {
-                get {
-                    return ((salasRow)(this.GetParentRow(this.Table.ParentRelations["FK_salas_funciones"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_salas_funciones"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public peliculasRow peliculasRow {
-                get {
-                    return ((peliculasRow)(this.GetParentRow(this.Table.ParentRelations["FK_peliculas_funciones"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_peliculas_funciones"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool Isid_peliculaNull() {
                 return this.IsNull(this.tablefunciones.id_peliculaColumn);
             }
@@ -3130,17 +2972,6 @@ namespace Win_App_Proyecto_de_Archivos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void Sethora_inicioNull() {
                 this[this.tablefunciones.hora_inicioColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public reservacionesRow[] GetreservacionesRows() {
-                if ((this.Table.ChildRelations["FK_funciones_reservaciones"] == null)) {
-                    return new reservacionesRow[0];
-                }
-                else {
-                    return ((reservacionesRow[])(base.GetChildRows(this.Table.ChildRelations["FK_funciones_reservaciones"])));
-                }
             }
         }
         
@@ -3224,17 +3055,6 @@ namespace Win_App_Proyecto_de_Archivos {
             public void Setlength_minNull() {
                 this[this.tablepeliculas.length_minColumn] = global::System.Convert.DBNull;
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public funcionesRow[] GetfuncionesRows() {
-                if ((this.Table.ChildRelations["FK_peliculas_funciones"] == null)) {
-                    return new funcionesRow[0];
-                }
-                else {
-                    return ((funcionesRow[])(base.GetChildRows(this.Table.ChildRelations["FK_peliculas_funciones"])));
-                }
-            }
         }
         
         /// <summary>
@@ -3317,28 +3137,6 @@ namespace Win_App_Proyecto_de_Archivos {
             public void Setn_asientosNull() {
                 this[this.tablesalas.n_asientosColumn] = global::System.Convert.DBNull;
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public asientosRow[] GetasientosRows() {
-                if ((this.Table.ChildRelations["FK_salas_asientos"] == null)) {
-                    return new asientosRow[0];
-                }
-                else {
-                    return ((asientosRow[])(base.GetChildRows(this.Table.ChildRelations["FK_salas_asientos"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public funcionesRow[] GetfuncionesRows() {
-                if ((this.Table.ChildRelations["FK_salas_funciones"] == null)) {
-                    return new funcionesRow[0];
-                }
-                else {
-                    return ((funcionesRow[])(base.GetChildRows(this.Table.ChildRelations["FK_salas_funciones"])));
-                }
-            }
         }
         
         /// <summary>
@@ -3416,17 +3214,6 @@ namespace Win_App_Proyecto_de_Archivos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public salasRow salasRow {
-                get {
-                    return ((salasRow)(this.GetParentRow(this.Table.ParentRelations["FK_salas_asientos"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_salas_asientos"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsfilaNull() {
                 return this.IsNull(this.tableasientos.filaColumn);
             }
@@ -3459,17 +3246,6 @@ namespace Win_App_Proyecto_de_Archivos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void Setid_salaNull() {
                 this[this.tableasientos.id_salaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public asientos_reservadosRow[] Getasientos_reservadosRows() {
-                if ((this.Table.ChildRelations["FK_asientos_asientos_reservados"] == null)) {
-                    return new asientos_reservadosRow[0];
-                }
-                else {
-                    return ((asientos_reservadosRow[])(base.GetChildRows(this.Table.ChildRelations["FK_asientos_asientos_reservados"])));
-                }
             }
         }
         
