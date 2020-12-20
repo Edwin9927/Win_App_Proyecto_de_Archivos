@@ -30,7 +30,7 @@ namespace Win_App_Proyecto_de_Archivos
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.salasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataCine = new Win_App_Proyecto_de_Archivos.DataCine();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -51,9 +51,9 @@ namespace Win_App_Proyecto_de_Archivos
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.salasBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "DataSet1";
+            reportDataSource2.Value = this.salasBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Win_App_Proyecto_de_Archivos.reportSala.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
@@ -68,7 +68,8 @@ namespace Win_App_Proyecto_de_Archivos
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
             this.Name = "reportviewerSala";
-            this.Text = "reportviewerSala";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Reporte de Salas";
             this.Load += new System.EventHandler(this.reportviewerSala_Load);
             ((System.ComponentModel.ISupportInitialize)(this.salasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataCine)).EndInit();

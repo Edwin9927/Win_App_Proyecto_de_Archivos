@@ -96,5 +96,20 @@ namespace Win_App_Proyecto_de_Archivos
         {
             dataCine1.ReadXml(Application.StartupPath + "\\Cine.xml");
         }
+
+        private void cbOpcion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

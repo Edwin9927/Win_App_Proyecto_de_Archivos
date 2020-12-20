@@ -93,20 +93,22 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
         /// <summary>
         ///   Busca una cadena traducida similar a &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
         ///&lt;DataCine xmlns=&quot;http://tempuri.org/DataCine.xsd&quot;&gt;
+        ///  &lt;clientes&gt;
+        ///    &lt;id&gt;1&lt;/id&gt;
+        ///    &lt;nombre&gt;Elena&lt;/nombre&gt;
+        ///    &lt;apellido&gt;Quinzo&lt;/apellido&gt;
+        ///    &lt;email&gt;martha@hotmail.com&lt;/email&gt;
+        ///  &lt;/clientes&gt;
+        ///  &lt;clientes&gt;
+        ///    &lt;id&gt;3&lt;/id&gt;
+        ///    &lt;nombre&gt;Edwin&lt;/nombre&gt;
+        ///    &lt;apellido&gt;Manzano&lt;/apellido&gt;
+        ///    &lt;email&gt;edwin@hotmail.com&lt;/email&gt;
+        ///  &lt;/clientes&gt;
         ///  &lt;salas&gt;
         ///    &lt;id&gt;1&lt;/id&gt;
         ///    &lt;nombre&gt;Sala 1&lt;/nombre&gt;
         ///    &lt;n_asientos&gt;20&lt;/n_asientos&gt;
-        ///  &lt;/salas&gt;
-        ///  &lt;salas&gt;
-        ///    &lt;id&gt;2&lt;/id&gt;
-        ///    &lt;nombre&gt;Sala Vip&lt;/nombre&gt;
-        ///    &lt;n_asientos&gt;10&lt;/n_asientos&gt;
-        ///  &lt;/salas&gt;
-        ///  &lt;salas&gt;
-        ///    &lt;id&gt;3&lt;/id&gt;
-        ///    &lt;nombre&gt;Sala 2&lt;/nombre&gt;
-        ///    &lt;n_asientos&gt;40&lt;/n_asientos&gt;
         ///  &lt;/salas&gt;
         ///&lt;/DataCine&gt;.
         /// </summary>
@@ -189,6 +191,16 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngfind_com_copyright_png_938050 {
+            get {
+                object obj = ResourceManager.GetObject("pngfind_com_copyright_png_938050", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap report_file_50px {
             get {
                 object obj = ResourceManager.GetObject("report_file_50px", resourceCulture);
@@ -242,6 +254,26 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
         internal static System.Drawing.Bitmap trash_40px {
             get {
                 object obj = ResourceManager.GetObject("trash_40px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_100px {
+            get {
+                object obj = ResourceManager.GetObject("user_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_40px {
+            get {
+                object obj = ResourceManager.GetObject("user_40px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

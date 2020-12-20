@@ -22,5 +22,17 @@ namespace Win_App_Proyecto_de_Archivos
             addCliente cliente = new addCliente();
             cliente.ShowDialog();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            searchCliente cliente = new searchCliente();
+            cliente.ShowDialog();
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            reportviewerCliente cliente = new reportviewerCliente();
+            cliente.ShowDialog();
+        }
     }
 }

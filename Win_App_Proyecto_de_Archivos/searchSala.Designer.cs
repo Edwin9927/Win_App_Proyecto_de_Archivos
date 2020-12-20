@@ -60,6 +60,7 @@ namespace Win_App_Proyecto_de_Archivos
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(130, 30);
             this.txtNombre.TabIndex = 9;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // label1
@@ -71,6 +72,7 @@ namespace Win_App_Proyecto_de_Archivos
             this.label1.Size = new System.Drawing.Size(165, 38);
             this.label1.TabIndex = 8;
             this.label1.Text = "Buscar sala";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // cbOpcion
             // 
@@ -83,6 +85,7 @@ namespace Win_App_Proyecto_de_Archivos
             this.cbOpcion.Name = "cbOpcion";
             this.cbOpcion.Size = new System.Drawing.Size(121, 31);
             this.cbOpcion.TabIndex = 15;
+            this.cbOpcion.SelectedIndexChanged += new System.EventHandler(this.cbOpcion_SelectedIndexChanged);
             // 
             // dataCine1
             // 

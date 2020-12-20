@@ -76,6 +76,12 @@
     <Compile Include="addSala.Designer.cs">
       <DependentUpon>addSala.cs</DependentUpon>
     </Compile>
+    <Compile Include="changeCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changeCliente.Designer.cs">
+      <DependentUpon>changeCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="changeSala.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoCliente.Designer.cs">
+      <DependentUpon>infoCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="infosala.cs">
       <SubType>Form</SubType>
@@ -123,11 +135,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reportviewerCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportviewerCliente.Designer.cs">
+      <DependentUpon>reportviewerCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="reportviewerSala.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="reportviewerSala.Designer.cs">
       <DependentUpon>reportviewerSala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchCliente.Designer.cs">
+      <DependentUpon>searchCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="searchSala.cs">
       <SubType>Form</SubType>
@@ -142,11 +166,17 @@
     <EmbeddedResource Include="addSala.resx">
       <DependentUpon>addSala.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="changeCliente.resx">
+      <DependentUpon>changeCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="changeSala.resx">
       <DependentUpon>changeSala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoCliente.resx">
+      <DependentUpon>infoCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="infosala.resx">
       <DependentUpon>infosala.cs</DependentUpon>
@@ -170,9 +200,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="reportCliente.rdlc" />
     <EmbeddedResource Include="reportSala.rdlc" />
+    <EmbeddedResource Include="reportviewerCliente.resx">
+      <DependentUpon>reportviewerCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="reportviewerSala.resx">
       <DependentUpon>reportviewerSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchCliente.resx">
+      <DependentUpon>searchCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="searchSala.resx">
       <DependentUpon>searchSala.cs</DependentUpon>
@@ -251,6 +288,9 @@
     <None Include="Resources\pencil_40px.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\user_40px.png" />
+    <None Include="Resources\user_100px.png" />
+    <None Include="Resources\pngfind.com-copyright-png-938050.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

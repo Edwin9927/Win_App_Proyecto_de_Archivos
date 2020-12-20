@@ -68,6 +68,7 @@ namespace Win_App_Proyecto_de_Archivos
             this.btnReportes.Text = "Reportes";
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReportes.UseVisualStyleBackColor = true;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // btnBuscar
             // 
@@ -85,6 +86,7 @@ namespace Win_App_Proyecto_de_Archivos
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnAgregar
             // 
@@ -106,17 +108,16 @@ namespace Win_App_Proyecto_de_Archivos
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.auditorio_cine;
-            this.pictureBox1.Location = new System.Drawing.Point(74, 18);
+            this.pictureBox1.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.pngfind_com_copyright_png_938050;
+            this.pictureBox1.Location = new System.Drawing.Point(141, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(343, 218);
+            this.pictureBox1.Size = new System.Drawing.Size(220, 220);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoGenerateColumns = false;
