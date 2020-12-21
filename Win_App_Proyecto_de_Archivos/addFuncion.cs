@@ -49,11 +49,19 @@ namespace Win_App_Proyecto_de_Archivos
             datos[2] = datosSala[0]["id"];
             datos[3] = b;
 
-            dataCine.funciones.Rows.Add(datos);
+            try
+            {
+                dataCine.funciones.Rows.Add(datos);
 
-            dataCine.WriteXml(Application.StartupPath + "\\Cine.xml");
+                dataCine.WriteXml(Application.StartupPath + "\\Cine.xml");
 
-            MessageBox.Show("Funcion agregada correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Funcion agregada correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch
+            {
+                MessageBox.Show("Error al intentar agregar la funcion", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
             this.Close();
         }
     }

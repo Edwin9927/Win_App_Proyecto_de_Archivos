@@ -38,7 +38,8 @@ namespace Win_App_Proyecto_de_Archivos
             this.label1 = new System.Windows.Forms.Label();
             this.btnSala = new System.Windows.Forms.Button();
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnReserva = new System.Windows.Forms.Button();
+            this.btnFuncion = new System.Windows.Forms.Button();
             this.btnCliente = new System.Windows.Forms.Button();
             this.btnPelicula = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
@@ -122,7 +123,7 @@ namespace Win_App_Proyecto_de_Archivos
             this.btnSala.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSala.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSala.ForeColor = System.Drawing.Color.White;
-            this.btnSala.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.subtract_32px;
+            this.btnSala.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.room_32px;
             this.btnSala.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSala.Location = new System.Drawing.Point(0, 44);
             this.btnSala.Name = "btnSala";
@@ -135,7 +136,8 @@ namespace Win_App_Proyecto_de_Archivos
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.MenuVertical.Controls.Add(this.button1);
+            this.MenuVertical.Controls.Add(this.btnReserva);
+            this.MenuVertical.Controls.Add(this.btnFuncion);
             this.MenuVertical.Controls.Add(this.btnCliente);
             this.MenuVertical.Controls.Add(this.btnPelicula);
             this.MenuVertical.Controls.Add(this.btnSala);
@@ -145,24 +147,43 @@ namespace Win_App_Proyecto_de_Archivos
             this.MenuVertical.Size = new System.Drawing.Size(200, 450);
             this.MenuVertical.TabIndex = 1;
             // 
-            // button1
+            // btnReserva
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.subtract_32px;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 182);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 40);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "FUNCIONES";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnReserva.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btnReserva.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReserva.FlatAppearance.BorderSize = 0;
+            this.btnReserva.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btnReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReserva.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReserva.ForeColor = System.Drawing.Color.White;
+            this.btnReserva.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.reserve_32px;
+            this.btnReserva.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReserva.Location = new System.Drawing.Point(0, 228);
+            this.btnReserva.Name = "btnReserva";
+            this.btnReserva.Size = new System.Drawing.Size(200, 40);
+            this.btnReserva.TabIndex = 6;
+            this.btnReserva.Text = "RESERVACIONES";
+            this.btnReserva.UseVisualStyleBackColor = false;
+            this.btnReserva.Click += new System.EventHandler(this.btnReserva_Click);
+            // 
+            // btnFuncion
+            // 
+            this.btnFuncion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btnFuncion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFuncion.FlatAppearance.BorderSize = 0;
+            this.btnFuncion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btnFuncion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFuncion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFuncion.ForeColor = System.Drawing.Color.White;
+            this.btnFuncion.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources._3d_glasses_32px;
+            this.btnFuncion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFuncion.Location = new System.Drawing.Point(0, 182);
+            this.btnFuncion.Name = "btnFuncion";
+            this.btnFuncion.Size = new System.Drawing.Size(200, 40);
+            this.btnFuncion.TabIndex = 5;
+            this.btnFuncion.Text = "FUNCIONES";
+            this.btnFuncion.UseVisualStyleBackColor = false;
+            this.btnFuncion.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnCliente
             // 
@@ -173,7 +194,7 @@ namespace Win_App_Proyecto_de_Archivos
             this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCliente.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCliente.ForeColor = System.Drawing.Color.White;
-            this.btnCliente.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.subtract_32px;
+            this.btnCliente.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.user_32px;
             this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCliente.Location = new System.Drawing.Point(0, 136);
             this.btnCliente.Name = "btnCliente";
@@ -192,7 +213,7 @@ namespace Win_App_Proyecto_de_Archivos
             this.btnPelicula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPelicula.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPelicula.ForeColor = System.Drawing.Color.White;
-            this.btnPelicula.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.subtract_32px;
+            this.btnPelicula.Image = global::Win_App_Proyecto_de_Archivos.Properties.Resources.movie_32px;
             this.btnPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPelicula.Location = new System.Drawing.Point(0, 90);
             this.btnPelicula.Name = "btnPelicula";
@@ -250,7 +271,8 @@ namespace Win_App_Proyecto_de_Archivos
         private System.Windows.Forms.PictureBox btninicio;
         private System.Windows.Forms.Button btnCliente;
         private System.Windows.Forms.Button btnPelicula;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnFuncion;
+        private System.Windows.Forms.Button btnReserva;
     }
 }
 

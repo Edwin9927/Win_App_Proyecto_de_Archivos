@@ -7,7 +7,7 @@
 <DiagramLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ex:showrelationlabel="True" ViewPortX="22" ViewPortY="25" xmlns:ex="urn:schemas-microsoft-com:xml-msdatasource-layout-extended" xmlns="urn:schemas-microsoft-com:xml-msdatasource-layout">
   <Shapes>
     <Shape ID="DesignTable:clientes" ZOrder="14" X="63" Y="240" Height="105" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="101" />
-    <Shape ID="DesignTable:reservaciones" ZOrder="13" X="51" Y="59" Height="86" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="82" />
+    <Shape ID="DesignTable:reservaciones" ZOrder="13" X="61" Y="62" Height="86" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="82" />
     <Shape ID="DesignTable:asientos_reservados" ZOrder="12" X="399" Y="46" Height="86" Width="181" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="82" />
     <Shape ID="DesignTable:funciones" ZOrder="11" X="242" Y="171" Height="105" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="101" />
     <Shape ID="DesignTable:peliculas" ZOrder="10" X="723" Y="286" Height="86" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="24" SplitterPosition="82" />
@@ -22,24 +22,24 @@
           <Y>188</Y>
         </Point>
         <Point>
-          <X>184</X>
+          <X>194</X>
           <Y>188</Y>
         </Point>
         <Point>
-          <X>184</X>
-          <Y>145</Y>
+          <X>194</X>
+          <Y>148</Y>
         </Point>
       </RoutePoints>
     </Connector>
     <Connector ID="DesignRelation:FK_clientes_reservaciones" ZOrder="4" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>123</X>
+          <X>133</X>
           <Y>240</Y>
         </Point>
         <Point>
-          <X>123</X>
-          <Y>145</Y>
+          <X>133</X>
+          <Y>148</Y>
         </Point>
       </RoutePoints>
     </Connector>
@@ -58,12 +58,12 @@
     <Connector ID="DesignRelation:FK_reservaciones_asientos_reservados" ZOrder="2" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>201</X>
-          <Y>91</Y>
+          <X>211</X>
+          <Y>94</Y>
         </Point>
         <Point>
           <X>399</X>
-          <Y>91</Y>
+          <Y>94</Y>
         </Point>
       </RoutePoints>
     </Connector>

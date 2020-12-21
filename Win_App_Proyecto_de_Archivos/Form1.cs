@@ -92,5 +92,10 @@ namespace Win_App_Proyecto_de_Archivos
         {
             AbrirFormEnPanel(new newFuncion());
         }
+
+        private void btnReserva_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new newReservacion());
+        }
     }
 }

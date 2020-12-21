@@ -134,13 +134,13 @@
       <xs:selector xpath=".//mstns:funciones" />
       <xs:field xpath="mstns:id_pelicula" />
     </xs:keyref>
-    <xs:keyref name="FK_reservaciones_asientos_reservados" refer="id_reservaciones" msdata:ConstraintOnly="true">
-      <xs:selector xpath=".//mstns:asientos_reservados" />
-      <xs:field xpath="mstns:id_reservacion" />
-    </xs:keyref>
     <xs:keyref name="FK_asientos_asientos_reservados" refer="id_asientos" msdata:ConstraintOnly="true">
       <xs:selector xpath=".//mstns:asientos_reservados" />
       <xs:field xpath="mstns:id_asiento" />
+    </xs:keyref>
+    <xs:keyref name="FK_reservaciones_asientos_reservados" refer="id_reservaciones" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:asientos_reservados" />
+      <xs:field xpath="mstns:id_reservacion" />
     </xs:keyref>
     <xs:keyref name="FK_clientes_reservaciones" refer="id_cliente" msdata:ConstraintOnly="true">
       <xs:selector xpath=".//mstns:reservaciones" />

@@ -63,6 +63,26 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1366_2000 {
+            get {
+                object obj = ResourceManager.GetObject("_1366_2000", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3d_glasses_32px {
+            get {
+                object obj = ResourceManager.GetObject("_3d_glasses_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap auditorio_cine {
             get {
                 object obj = ResourceManager.GetObject("auditorio_cine", resourceCulture);
@@ -100,17 +120,16 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
         ///    &lt;email&gt;martha@hotmail.com&lt;/email&gt;
         ///  &lt;/clientes&gt;
         ///  &lt;clientes&gt;
-        ///    &lt;id&gt;3&lt;/id&gt;
+        ///    &lt;id&gt;2&lt;/id&gt;
         ///    &lt;nombre&gt;Edwin&lt;/nombre&gt;
         ///    &lt;apellido&gt;Manzano&lt;/apellido&gt;
-        ///    &lt;email&gt;edwin@hotmail.com&lt;/email&gt;
+        ///    &lt;email&gt;edwinmanzano@gmail.com&lt;/email&gt;
         ///  &lt;/clientes&gt;
         ///  &lt;clientes&gt;
-        ///    &lt;id&gt;4&lt;/id&gt;
+        ///    &lt;id&gt;3&lt;/id&gt;
         ///    &lt;nombre&gt;Fidel&lt;/nombre&gt;
         ///    &lt;apellido&gt;Avalos&lt;/apellido&gt;
-        ///    &lt;email&gt;fidel03@gmail.com&lt;/email&gt;
-        ///  [resto de la cadena truncado]&quot;;.
+        ///    &lt;email&gt;fidel@hotmail.com&lt;/emai [resto de la cadena truncado]&quot;;.
         /// </summary>
         internal static string Cine {
             get {
@@ -164,6 +183,16 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
         internal static System.Drawing.Bitmap movie_100px {
             get {
                 object obj = ResourceManager.GetObject("movie_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap movie_32px {
+            get {
+                object obj = ResourceManager.GetObject("movie_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -231,6 +260,26 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap reserve_32px {
+            get {
+                object obj = ResourceManager.GetObject("reserve_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap room_32px {
+            get {
+                object obj = ResourceManager.GetObject("room_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap search_40px {
             get {
                 object obj = ResourceManager.GetObject("search_40px", resourceCulture);
@@ -284,6 +333,16 @@ namespace Win_App_Proyecto_de_Archivos.Properties {
         internal static System.Drawing.Bitmap user_100px {
             get {
                 object obj = ResourceManager.GetObject("user_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_32px {
+            get {
+                object obj = ResourceManager.GetObject("user_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

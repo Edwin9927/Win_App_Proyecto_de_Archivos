@@ -377,16 +377,16 @@ namespace Win_App_Proyecto_de_Archivos {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_reservaciones_asientos_reservados", new global::System.Data.DataColumn[] {
-                        this.tablereservaciones.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tableasientos_reservados.id_reservacionColumn});
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_asientos_asientos_reservados", new global::System.Data.DataColumn[] {
+                        this.tableasientos.idColumn}, new global::System.Data.DataColumn[] {
+                        this.tableasientos_reservados.id_asientoColumn});
             this.tableasientos_reservados.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_asientos_asientos_reservados", new global::System.Data.DataColumn[] {
-                        this.tableasientos.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tableasientos_reservados.id_asientoColumn});
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_reservaciones_asientos_reservados", new global::System.Data.DataColumn[] {
+                        this.tablereservaciones.idColumn}, new global::System.Data.DataColumn[] {
+                        this.tableasientos_reservados.id_reservacionColumn});
             this.tableasientos_reservados.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;

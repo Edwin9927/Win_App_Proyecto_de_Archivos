@@ -82,6 +82,12 @@
     <Compile Include="addPelicula.Designer.cs">
       <DependentUpon>addPelicula.cs</DependentUpon>
     </Compile>
+    <Compile Include="addReservacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addReservacion.Designer.cs">
+      <DependentUpon>addReservacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="addSala.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,12 @@
     <Compile Include="newPelicula.Designer.cs">
       <DependentUpon>newPelicula.cs</DependentUpon>
     </Compile>
+    <Compile Include="newReservacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newReservacion.Designer.cs">
+      <DependentUpon>newReservacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="newSala.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +259,9 @@
     <EmbeddedResource Include="addPelicula.resx">
       <DependentUpon>addPelicula.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="addReservacion.resx">
+      <DependentUpon>addReservacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addSala.resx">
       <DependentUpon>addSala.cs</DependentUpon>
     </EmbeddedResource>
@@ -291,6 +306,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="newPelicula.resx">
       <DependentUpon>newPelicula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newReservacion.resx">
+      <DependentUpon>newReservacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="newSala.resx">
       <DependentUpon>newSala.cs</DependentUpon>
@@ -412,6 +430,12 @@
     <None Include="Resources\pngfind.com-copyright-png-938050.png" />
     <None Include="Resources\movie_100px.png" />
     <None Include="Resources\funcion.jpg" />
+    <None Include="Resources\3d_glasses_32px.png" />
+    <None Include="Resources\reserve_32px.png" />
+    <None Include="Resources\user_32px.png" />
+    <None Include="Resources\movie_32px.png" />
+    <None Include="Resources\room_32px.png" />
+    <None Include="Resources\1366_2000.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
